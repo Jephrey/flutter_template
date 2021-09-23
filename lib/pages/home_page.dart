@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_template/pages/pages.dart';
 import 'package:get/get.dart';
 
 // An example homepage with an AppBar with 2 icons and a button to go to another page.
@@ -25,7 +26,7 @@ class HomePage extends StatelessWidget {
           child: TextButton(
             child: Text("Go to Second Page"),
             onPressed: () {
-              Get.toNamed('/second');
+              Get.toNamed(Pages.secondPage);
             },
           ),
         ),
